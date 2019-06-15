@@ -22,11 +22,23 @@
     font-style: normal;
 }
 
+@font-face{
+    font-family: 'Charter';
+    src: url('fonts/charter/charter_regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 body{
     margin: 0px;
     padding: 0px;
     background-color: #FFFEFC;
     font-family: 'Inter', sans-serif;
+}
+
+.charter-body{
+    font-family: 'Charter';
+    font-size: 22px;
 }
 
 *{
@@ -100,11 +112,14 @@ nav{
     font-size: 72px;
     margin-top: 40px;
     margin-bottom: 18px;
+    font-weight: 700;
 }
 
 .hero-sub-heading{
     margin-top: 0px;
     margin-bottom: 30px;
+    line-height: 33px;
+    font-family: 'Charter';
     font-size: 25px;
-    line-height: 32px;
+    font-weight: 400;
 }
