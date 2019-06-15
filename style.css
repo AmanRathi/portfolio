@@ -1,8 +1,32 @@
+@font-face{
+    font-family: 'Inter';
+    src: url('fonts/inter/Inter-Medium.woff') format('woff');
+    src: url('fonts/inter/Inter-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Inter';
+    src: url('fonts/inter/Inter-SemiBold.woff') format('woff');
+    src: url('fonts/inter/Inter-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Inter';
+    src: url('fonts/inter/Inter-Bold.woff') format('woff');
+    src: url('fonts/inter/Inter-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
 body{
     margin: 0px;
     padding: 0px;
     background-color: #FFFEFC;
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 *{
