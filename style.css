@@ -34,6 +34,7 @@ body{
     padding: 0px;
     background-color: #FFFEFC;
     font-family: 'Inter', sans-serif;
+    color: #27251F;
 }
 
 .charter-body{
@@ -67,6 +68,7 @@ body{
 
 a{
     text-decoration: none;
+    color: #27251F;
 }
 
 nav{
@@ -106,6 +108,11 @@ nav{
     background-color: #E1E1E1;
     display: inline-block;
     border-radius: 50%;
+    overflow: hidden;
+}
+
+.my-pic img{
+    width: 100%;
 }
 
 .hero-heading{
@@ -122,4 +129,23 @@ nav{
     font-family: 'Charter';
     font-size: 25px;
     font-weight: 400;
+}
+
+.btn{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 24px 12px 24px;
+    background-color: #FFF9ED;
+    border: 2px solid #27251F;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: -4px -4px 0px -2px #FFFEFC, 
+                -4px -4px 0px 0px #27251F;
+    transition: box-shadow 200ms ease-out, background-color 400ms;
+}
+
+.btn:hover{
+    box-shadow: 0px 0px 0px -2px #FFFEFC, 
+                0px 0px 0px 0px #27251F;
+    background-color: #FFF2D9;
 }
