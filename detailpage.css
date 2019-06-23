@@ -1,0 +1,56 @@
+.d-hero-image{
+    margin-top:100px;
+    margin-bottom: 100px;
+}
+
+.d-hero-image img{
+    width: 100%;
+}
+
+.d-title{
+    font-size: 54px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.d-sub-title{
+    font-size: 36px;
+    font-weight: 400;
+    color: #7C7C7C;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.d-tags{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.d-image{
+    margin-bottom: 30px;
+}
+
+.d-image img{
+    width: 100%;
+}
+
+.d-content-heading{
+    margin-top: 70px;
+    margin-bottom: 16px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.d-content-para{
+    font-family: 'Charter';
+    color: #27251F;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.d-list-content{
+    padding-left: 60px;
+    margin-top: 12px;
+}
