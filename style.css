@@ -135,10 +135,10 @@ nav{
 }
 
 .my-pic{
-    width: 140px;
-    height: 140px;
+    width: 200px;
+    height: 200px;
     display: inline-block;
-    border-radius: 50%;
+    border-radius: 30%;
     overflow: hidden;
 }
 

@@ -42,6 +42,13 @@
     font-weight: 700;
 }
 
+.d-content-main-heading{
+    margin-top: 70px;
+    margin-bottom: 16px;
+    font-size: 46px;
+    font-weight: 700;
+}
+
 .d-content-para{
     font-family: 'Charter';
     color: #27251F;
