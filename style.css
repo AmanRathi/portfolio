@@ -307,6 +307,7 @@ footer{
     }
     .work-card{
         margin-bottom: 40px;
+        max-width: initial;
     }
     .work-title h3{
         font-size: 18px;
