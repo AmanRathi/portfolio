@@ -61,3 +61,27 @@
     padding-left: 60px;
     margin-top: 12px;
 }
+
+
+
+/* Media queries: */
+@media only screen and (max-width: 900px) {
+    .d-title{
+        font-size: 26px;
+    }
+    .d-sub-title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .d-tags{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .d-content-heading{
+        font-size: 24px;
+    }
+    .d-content-para{
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
