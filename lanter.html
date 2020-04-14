@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="detailpage.css">
+    <title>Lanter Delivery Systems - Scanning system for a logistics company</title>
+</head>
+
+<body>
+    <nav>
+        <div class="flx col-12 nav-cont">
+            <div>
+                <a href="index.html"><img src="images/logo-circle.svg" alt="logo"></a>
+            </div>
+            <div>
+                <ul class="nav-items flx">
+                    <li><a href="index.html#stop" class="links">Work</a></li>
+                    <li><a href="" class="links">CV</a></li>
+                    <li><a href="mailto:amanrathi@live.com" class="links">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="col-10 d-hero-image">
+        <img src="images/lanter/lanter-hero.png" alt="Lanter hero image">
+    </div>
+    <div class="col-8">
+        <h1 class="d-title">Lanter Delivery Systems</h1>
+        <h2 class="d-sub-title">Scanning system for a logistics company</h2>
+        <div class="d-tags">Stakeholders interview, Opportunity & strategy workshop, Interaction design</div>
+    </div>
+    <h3 class="col-8 d-content-heading">Introduction</h3>
+    <p class="col-8 d-content-para">
+        Lanter Delivery systems is a B2B, shared delivery, logistics company. Their major clients
+        are car manufacturers and agricultural OEMs. Lanter delivers all machineries and parts manufactured
+        by their customers to multiple dealers across the whole country (USA). In order for a parcel to reach
+        its destination (point zero or dealer in Lanter terminology) it has to go through multiple warehouses
+        from all different cities and states. To give better customer service Lanter has to make sure the
+        safety of parcels and keep customers and dealers updated with the current state and location of parcels.
+        Goal of the project was to replace an almost 18 years old system, which worked on Palm OS with a better,
+        faster and cheaper Android and iOS system.
+    </p>
+    <h3 class="col-8 d-content-heading">The challenge</h3>
+    <p class="col-8 d-content-para">
+        Before I went into the research and discovery phase for a new project, I needed to level up with existing
+        knowledge and systems. Most challenging part was to get a clear idea about terminologies used by the
+        team and understanding the parcel label structure, which was different for each customer. Apart from
+        widely used terms in the logistic world there were lots of other non-standard terms used by the Lanter
+        team to communicate effectively. Another big challenge was to move the huge workforce to a new system,
+        which would require a re-training of all employees (Warehouse workers and drivers).
+    </p>
+    <h3 class="col-8 d-content-heading">Goals</h3>
+    <p class="col-8 d-content-para">
+        Having a system which can scan 10% more parcels as compared to the current system in given time, in phase
+        1 launch with the least amount of difficulties and user interactions. Reduce infrastructure expenses.
+        Be platform independent.
+    </p>
+    <h3 class="col-8 d-content-heading">Research and findings</h3>
+    <div class="col-10 d-image">
+        <img src="images/lanter/research.png" alt="Lanter warehouse, whiteboard images">
+    </div>
+    <p class="col-8 d-content-para">
+        I started my case by studying the existing system, leveling up myself with the terminologies and scenarios
+        which happen day to day in the Lanter world. We all agreed on a 5 days opportunity and strategy workshop at
+        client location, Saint Louis. Idea was to get all stakeholders in one room along with the Mobisoft team, in
+        order to understand everyone’s expectations. We spent 5 days discussing current challenges, whiteboarding
+        quick ideas, visiting Lanter facilities, meeting all different people involved in the process on ground and
+        office. I also spent a lot of time interviewing individual stakeholders during this time, this helped me in
+        understanding their challenges more clearly, as they were able to communicate more freely in these interviews.
+        One of the most common themes which emerged from these workshop sessions was “Just scan it”. Idea was to reduce manual
+        hand (tapping, swiping, selecting) interaction and let the system be intelligent enough about the context of the parcel.
+        Users just need to scan and the system will figure out rest. “Just scan it” became the motto of our rest of the design process.
+        There are also multiple discussions and agreements how QR codes labels will be used to make “just scan it process” successful.
+    </p>
+    <h3 class="col-8 d-content-heading">Interaction design</h3>
+    <div class="col-10 d-image">
+        <img src="images/lanter/wires.jpg" alt="wireframes images">
+    </div>
+    <p class="col-8 d-content-para">
+        One of the challenges I faced in interaction design while designing was, how to communicate to the user what
+        is happening on the screen. Of Course there will be multiple training sessions which will explain to the user
+        how to use the new system but it should be self sufficient for edge cases, specially when users will be performing
+        hundreds of scans (or more in some cases) per day. We relied on three visual senses to communicate if anything
+        goes wrong. System should communicate with the user by sight, hearing and touch senses. Visual, audio and
+        vibration interactions were used in case of exceptions and errors. For any successful scan we relied on
+        visual and sound feedback only.
+    </p>
+
+    <h3 class="col-8 d-content-heading">Major user stories</h3>
+    <p class="col-8 d-content-para">
+        <ul class="col-8 d-content-para d-list-content">
+            <li>User should be able to scan a parcel</li>
+            <li>User should be communicated about parcel scan status using sound and visuals</li>
+            <li>User should be able to call exceptions in unexpected situations</li>
+            <li>User should be able to deliver parcels successfully yo dealers</li>
+            <li>User should be able to put parcels in a zone</li>
+        </ul>
+    </p>
+
+    <!-- Interaction design -->
+    <!-- Scan Parcel -->
+    <h3 class="col-8 d-content-heading">User should be able to scan a parcel number and dealer code</h3>
+    <div class="col-10 d-image">
+        <img src="images/lanter/scan-parcel.png" alt="scan parcels">
+    </div>
+
+    <!-- OCR -->
+    <h3 class="col-8 d-content-heading">User should be able to OCR dealer code if barcode not available</h3>
+    <div class="col-10 d-image">
+        <img src="images/lanter/scan-ocr.png" alt="sketches">
+    </div>
+
+    <!-- Scan in zone -->
+    <h3 class="col-8 d-content-heading">User should be able to add parcels to zone and containers</h3>
+    <div class="col-10 d-image">
+        <img src="images/lanter/scan-in-container.png" alt="sketches">
+    </div>
+
+    <!-- Delivery -->
+    <h3 class="col-8 d-content-heading">User should be able to deliver parcels successfully to dealers</h3>
+    <div class="col-10 d-image">
+        <img src="images/lanter/delivery.png" alt="sketches">
+    </div>
+
+    <!-- Errors -->
+    <h3 class="col-8 d-content-heading">User should be communicated if any wrong scan happens</h3>
+    <div class="col-10 d-image">
+        <img src="images/lanter/errors.png" alt="sketches">
+    </div>
+
+    <!-- Exceptions -->
+    <h3 class="col-8 d-content-heading">Interaction design: Comparing report and images</h3>
+    <div class="col-10 d-image">
+        <img src="images/lanter/exceptions.png" alt="sketches">
+    </div>
+
+    <!-- Learnings -->
+    <h3 class="col-8 d-content-heading">Learnings</h3>
+    <p class="col-8 d-content-para">
+        This was one of the projects where I got a chance to work on a wide variety of UX processes, and see first
+        hand, how things happen on the ground. From an interaction point of view, Lanter was a completely different
+        challenge for me. It helped in broadening my imaginations what possible things we can do with a simple mobile
+        app. This was certainly a big step forward for me in interaction design learnings, from typical hub-and-spoke
+        pattern to “Just scan it” pattern.
+    </p>
+    <footer>
+        <div class="col-4 footer-cont">
+            <div class="social-icons flx">
+                <a href="mailto:amanrathi@live.com" target="_blank" class="flx"><img src="images/email.svg" alt="email"></a>
+                <a href="https://www.linkedin.com/in/aman-rathi" target="_blank" class="flx"><img src="images/linkedin.svg" alt="linkedin"></a>
+                <a href="https://twitter.com/amanrathi" target="_blank" class="flx"><img src="images/twitter.svg" alt="twitter"></a>
+                <a href="https://www.uplabs.com/aman_rathi" target="_blank" class="flx"><img src="images/uplabs.svg" alt="uplabs"></a>
+            </div>
+            <div class="copyright">Aman Rathi © 2020</div>
+        </div>
+    </footer>
+</body>
+
+</html>
