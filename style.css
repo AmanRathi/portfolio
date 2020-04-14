@@ -170,21 +170,21 @@ nav{
     border: 2px solid #27251F;
     border-radius: 3px;
     cursor: pointer;
-    -moz-box-shadow: -4px -4px 0px -2px #FFFEFC, 
+    -moz-box-shadow: -4px -4px 0px -2px #FFFEFC,
                 -4px -4px 0px 0px #27251F;
-    -webkit-box-shadow: -4px -4px 0px -2px #FFFEFC, 
+    -webkit-box-shadow: -4px -4px 0px -2px #FFFEFC,
                 -4px -4px 0px 0px #27251F;
-    box-shadow: -4px -4px 0px -2px #FFFEFC, 
+    box-shadow: -4px -4px 0px -2px #FFFEFC,
                 -4px -4px 0px 0px #27251F;
     transition: box-shadow 200ms ease-out, background-color 400ms;
 }
 
 .btn:hover{
-    -moz-box-shadow: 0px 0px 0px -2px #FFFEFC, 
+    -moz-box-shadow: 0px 0px 0px -2px #FFFEFC,
                 0px 0px 0px 0px #27251F;
-    -webkit-box-shadow: 0px 0px 0px -2px #FFFEFC, 
+    -webkit-box-shadow: 0px 0px 0px -2px #FFFEFC,
                 0px 0px 0px 0px #27251F;
-    box-shadow: 0px 0px 0px -2px #FFFEFC, 
+    box-shadow: 0px 0px 0px -2px #FFFEFC,
                 0px 0px 0px 0px #27251F;
     background-color: #FFF2D9;
 }
@@ -275,4 +275,50 @@ footer{
 
 .social-icons a:hover{
     background-color: #FFF2D9;
+}
+
+
+
+/* Media queries: */
+@media only screen and (max-width: 900px) {
+    .hero-sec-cont {
+        height: initial;
+    }
+    .my-pic {
+        width: 150px;
+        height: 150px;
+        margin-top: 60px;
+    }
+    .hero-heading {
+        font-size: 26px;
+    }
+    .break{
+        display: none;
+    }
+    .hero-sub-heading {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .btn{
+        font-size: 14px;
+    }
+    .work-card-cont{
+        display: block;
+    }
+    .work-card{
+        margin-bottom: 40px;
+    }
+    .work-title h3{
+        font-size: 18px;
+        line-height: initial;
+    }
+    .work-brief{
+        font-size: 16px;
+    }
+    .work-cta{
+        margin-top: 6px;
+    }
+    .work-cta{
+        font-size: 14px;
+    }
 }
