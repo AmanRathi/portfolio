@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="detailpage.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <title>UIL - Accessible shuttle booking service</title>
+</head>
+
+<body>
+    <nav>
+        <div class="flx col-12 nav-cont">
+            <div>
+                <a href="index.html"><img src="images/logo-circle.svg" alt="logo"></a>
+            </div>
+            <div>
+                <ul class="nav-items flx">
+                    <li><a href="index.html#stop" class="links">Work</a></li>
+                    <li><a href="resume-2020.pdf" class="links">CV</a></li>
+                    <li><a href="mailto:amanrathi@live.com" class="links">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="col-10 d-hero-image">
+        <img src="images/uil/uil-hero.png" alt="UIL hero image">
+    </div>
+    <div class="col-8">
+        <h1 class="d-title">University of Illinois</h1>
+        <h2 class="d-sub-title">Accessible shuttle booking service</h2>
+        <div class="d-tags">Interaction design, accessibility design, Quality analysis</div>
+    </div>
+    <h3 class="col-8 d-content-heading">Introduction</h3>
+    <p class="col-8 d-content-para">
+        University of Illinois (UIL) launched their shuttle service in November 2019 connecting Urbana Champaign
+        to Chicago. Apart from offline ticket booking they needed online platforms for booking and managing trips.
+        I worked on responsive web, Android and iOS platform design. Clients needed their booking platform to be
+        Accessible following WCAG AA guidelines.
+    </p>
+    <h3 class="col-8 d-content-heading">The challenge</h3>
+    <p class="col-8 d-content-para">
+        Getting a chance to work on a project where AA accessibility guidelines are required is rare for me. I
+        usually follow guidelines like enough color contrast, readable letters, meaning flow and multiple other
+        guidelines, however working on a project where WCAG AA compliance is needed is something very different
+        and requires much more planning and testing than a normal project. This was my first full fledged project
+        where I designed and tested for Accessibility. Before starting this project I had to go through multiple
+        guides, articles, tutorials and training to understand how to design for accessibility, how different
+        screen readers work. Apart from designing I was given a responsibility to lead and educate my development
+        team and QA team about accessibility.<br><br>
+        In this case study I will focus more on how I designed for accessibility and dev collaboration, rather than my UX process.
+    </p>
+    <h3 class="col-8 d-content-heading">Process I followed to deliver accessible product</h3>
+    <p class="col-8 d-content-para">
+        I would divide my process into two major parts: <br><br> <b>Discovery and Design:</b>
+        <ul class="col-8 d-content-para d-list-content">
+            <li>Building Empathy</li>
+            <li>Understanding tools and guidelines</li>
+            <li>Inspiration and benchmarks</li>
+            <li>Design</li>
+        </ul>
+    </p>
+    <p class="col-8 d-content-para">
+        <b>Dev collaboration and quality analysis:</b>
+        <ul class="col-8 d-content-para d-list-content">
+            <li>Embracing semantics, limiting Divs</li>
+            <li>Code-penning small components (POCs)</li>
+            <li>Testing in different environments</li>
+            <li>Deep collaboration with stakeholders and experts</li>
+            <li>Validating with actual users</li>
+        </ul>
+    </p>
+    <h2 class="col-8 d-content-main-heading">Discovery and Design</h2>
+    <h3 class="col-8 d-content-heading">Building Empathy</h3>
+    <div class="col-10 d-image">
+        <img src="images/uil/wireframes.png" alt="Getting along with users">
+    </div>
+    <p class="col-8 d-content-para">
+        Youtube videos helped me in having a deeper look into how people with special
+        abilities use computers and screen readers. I also spent a good amount of time
+        reading multiple blogs by experts, and talking to my designer friends offline
+        about how they tackled certain cases and scenarios.
+    </p>
+    <h3 class="col-8 d-content-heading">Understanding tools and guidelines</h3>
+    <p class="col-8 d-content-para">
+        <b>Guidelines & resources:</b>
+        <ul class="col-8 d-content-para d-list-content">
+            <li>WCAG guidelines by W3C</li>
+            <li>Spent good amount of time reading WebAim</li>
+            <li>A11ycast - on youtube by Rob Dodson</li>
+        </ul>
+    </p>
+    <p class="col-8 d-content-para">
+        <b>Tools:</b>
+        <ul class="col-8 d-content-para d-list-content">
+            <li>Stark, sketch plugin</li>
+            <li>VoiceOver (iOS and Safari)</li>
+            <li>NVDA (Firefox)</li>
+            <li>Talkback (Android)</li>
+        </ul>
+    </p>
+    <h3 class="col-8 d-content-heading">Inspiration and benchmarks</h3>
+    <p class="col-8 d-content-para">
+        I spent some time understanding how travel and booking websites are solving the accessibility
+        problems and what patterns they are using. Expedia was my favourite oa all platforms (Web, iOS and Android).
+        I learned a lot in terms of patterns and semantics from these three websites.
+        <ul class="col-8 d-content-para d-list-content">
+            <li>Expedia (Also loved mobile app)</li>
+            <li>Google Flights</li>
+            <li>Hotels.com</li>
+        </ul>
+    </p>
+    <h3 class="col-8 d-content-heading">Design: Sketching</h3>
+    <div class="col-10 d-image">
+        <img src="images/uil/wireframes.png" alt="UIL Sketching">
+    </div>
+    <p class="col-8 d-content-para">
+        While sketching initially we were having a clear idea how screen reader flow is going to be.
+        The sequence, any hidden element specially designed for screen reader users (like hidden headings)
+    </p>
+    <h3 class="col-8 d-content-heading">Design: Deliverables</h3>
+    <div class="col-10 d-image">
+        <img src="images/uil/worklists.jpg" alt="Deliverables">
+    </div>
+    <p class="col-8 d-content-para">
+        Apart from supplying assets and design specs, I prepared one additional document for the reference of
+        the development team. We called it “SR Flow Doc” (SR: Screen reader)
+    </p>
+
+    <!-- Dev collaboration and Quality Analysis -->
+    <h2 class="col-8 d-content-main-heading">Dev collaboration and Quality Analysis</h2>
+    <h3 class="col-8 d-content-heading">Embracing semantics, limiting Divs</h3>
+    <div class="col-10 d-image">
+        <img src="images/uil/upload-scan.jpg" alt="semantics">
+    </div>
+    <p class="col-8 d-content-para">
+        Paying special attention to:
+        <ul class="col-8 d-content-para d-list-content">
+            <li>Headings, headers, footers, main</li>
+            <li>Forms: Labels, fieldset, legend etc</li>
+            <li>Using Aria attributes sparingly</li>
+        </ul>
+    </p>
+    <h3 class="col-8 d-content-heading">Code-penning small components (POCs)</h3>
+    <div class="col-10 d-image">
+        <img src="images/uil/scan-view-1.jpg" alt="Poc">
+    </div>
+    <p class="col-8 d-content-para">
+        Before implementing any small component in actual code base we tested those in an
+        isolation to get better clarity on accessibility
+    </p>
+    <h3 class="col-8 d-content-heading">Testing in different environments (Tools)</h3>
+    <p class="col-8 d-content-para">
+        <b>Web:</b>
+        <ul class="col-8 d-content-para d-list-content">
+            <li>VoiceOver -> Safari</li>
+            <li>NVDA -> Firefox (Windows)</li>
+        </ul>
+    </p>
+    <p class="col-8 d-content-para">
+        <b>Mobile:</b>
+        <ul class="col-8 d-content-para d-list-content">
+            <li>VoiceOver -> iOS</li>
+            <li>Talkback -> Android</li>
+        </ul>
+    </p>
+    <h3 class="col-8 d-content-heading">Deep collaboration with client</h3>
+    <p class="col-8 d-content-para">
+        Our stakeholder team had few accessibility experts, getting their timely feedback
+        on design and frontend code was immensely helpful for us.
+    </p>
+    <h3 class="col-8 d-content-heading">Validating with actual users</h3>
+    <p class="col-8 d-content-para">
+        We were having soft usability testing sessions, early in the process by showing
+        our designs to people who had some sort of color blindness to get an early idea
+        about any possible usability issues. By collaborating with our stakeholders we
+        ran multiple usability sessions on the University campus. We utilised Zoom for
+        this purpose, in order to get real time user feedback.
+    </p>
+    <h3 class="col-8 d-content-heading">Visual Designs</h3>
+    <div class="col-10 d-image">
+        <img src="images/uil/worklists.jpg" alt="visual designs">
+    </div>
+
+    <!-- Learnings -->
+    <h3 class="col-8 d-content-heading">Learnings</h3>
+    <p class="col-8 d-content-para">
+        This was one of the full fledged projects where I got an opportunity to study accessibility
+        in more depth. Knowing how to code can be a big advantage if working for accessible projects.
+        Projects with accessibility design require very close collaboration with the dev and QA
+        team as compared to other projects
+    </p>
+    <footer>
+        <div class="col-4 footer-cont">
+            <div class="social-icons flx">
+                <a href="mailto:amanrathi@live.com" target="_blank" class="flx"><img src="images/email.svg" alt="email"></a>
+                <a href="https://www.linkedin.com/in/aman-rathi" target="_blank" class="flx"><img src="images/linkedin.svg" alt="linkedin"></a>
+                <a href="https://twitter.com/amanrathi" target="_blank" class="flx"><img src="images/twitter.svg" alt="twitter"></a>
+                <a href="https://www.uplabs.com/aman_rathi" target="_blank" class="flx"><img src="images/uplabs.svg" alt="uplabs"></a>
+            </div>
+            <div class="copyright">Aman Rathi © 2020</div>
+        </div>
+    </footer>
+</body>
+
+</html>
