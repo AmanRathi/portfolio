@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55645295-3"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-55645295-3');
+  </script>
+  <!-- Full Story Analytics -->
+  <script>
+      window['_fs_debug'] = false;
+      window['_fs_host'] = 'fullstory.com';
+      window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
+      window['_fs_org'] = '121Q2N';
+      window['_fs_namespace'] = 'FS';
+      (function(m,n,e,t,l,o,g,y){
+          if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+          g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+          o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_script;
+          y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+          g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
+          g.anonymize=function(){g.identify(!!0)};
+          g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+          g.log = function(a,b){g("log",[a,b])};
+          g.consent=function(a){g("consent",!arguments.length||a)};
+          g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+          g.clearUserCookie=function(){};
+          g.setVars=function(n, p){g('setVars',[n,p]);};
+          g._w={};y='XMLHttpRequest';g._w[y]=m[y];y='fetch';g._w[y]=m[y];
+          if(m[y])m[y]=function(){return g._w[y].apply(this,arguments)};
+          g._v="1.3.0";
+      })(window,document,window['_fs_namespace'],'script','user');
+      </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search Cocktails</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Awesomeplete -->
+    <link rel="stylesheet" href="awesomplete.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="search">
+        <div class="cont">
+            <span class="glass">🍸</span>
+            <input id="user-input" type="text" data-maxitems="26" placeholder="Search Cocktail">
+        </div>
+    </div>
+    <div id="main" class="cont">
+        <div class="dtype-cont">
+            <span id="dtype">Alcoholic</span>
+        </div>
+        <h1 id="dname">California Lemonade</h1>
+        <div class="title-image-cont">
+            <img id="title-image" src="images/title.png" alt="title-image">
+        </div>
+        <div>
+            <h1>Ingridients</h1>
+            <ul class="ing-cont" id="ings">
+                <li>
+                    <div class="ing-image-cont"><img src="images/ing1.png" alt="Ingridient"></div>
+                    <div class="ing-name">2 oz Blended whiskey</div>
+                </li>
+                <li>
+                    <div class="ing-image-cont"><img src="images/ing2.png" alt="Ingridient"></div>
+                    <div class="ing-name">Carbonated water</div>
+                </li>
+                <li>
+                    <div class="ing-image-cont"><img src="images/ing3.png" alt="Ingridient"></div>
+                    <div class="ing-name">Juice of 1 Lemon</div>
+                </li>
+                <li>
+                    <div class="ing-image-cont"><img src="images/ing4.png" alt="Ingridient"></div>
+                    <div class="ing-name">1/4 tsp Grenadine</div>
+                </li>
+                <li>
+                    <div class="ing-image-cont"><img src="images/ing5.png" alt="Ingridient"></div>
+                    <div class="ing-name">1 tblsp Powdered sugar</div>
+                </li>
+                <li>
+                    <div class="ing-image-cont"><img src="images/ing6.png" alt="Ingridient"></div>
+                    <div class="ing-name">Juice of 1 Lime</div>
+                </li>
+            </ul>
+            <div>
+                <h1>Directions</h1>
+                <ul class="dir-cont" id="dirs-list">
+                    <li>Shake all ingredients (except carbonated water) with ice and strain into a collins glass over shaved ice</li>
+                    <li>Fill with carbonated water and stir</li>
+                    <li>Decorate with slices of orange and lemon</li>
+                    <li>Add the cherry and serve with a straw</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="cont">
+        Designed and developed with ❤️ & 🍺 in 🇮🇳 by <a href="https://amanrathi.com/">amanrathi@live.com</a><br>
+        Special thanks to: <a href="https://leaverou.github.io/awesomplete/">Awesomplete</a> & <a href="https://www.thecocktaildb.com/">TheCocktailDB</a>
+    </footer>
+</body>
+<script src="awesomplete.js"></script>
+<script src="script.js"></script>
+</html>

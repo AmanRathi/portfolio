@@ -1,0 +1,164 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #222938;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.search{
+    width: 100%;
+    background-color: #2B3140;
+    height: 120px;
+}
+
+.cont{
+    width: 100%;
+    max-width: 940px;
+    margin: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.glass{
+    font-size: 56px;
+}
+
+.awesomplete{
+    width: calc(100% - 65px);
+}
+
+#user-input{
+    width: 100%;
+    height: 80px;
+    margin-top: 30px;
+    font-size: 56px;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+}
+
+#user-input::placeholder{
+    color: #5C616C;
+    font-family: 'Poppins';
+}
+
+h1{
+    color: #A06D52;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.dtype-cont{
+    height: 70px;
+}
+
+.dtype-cont > span{
+    padding: 6px 10px 6px 10px;
+    background: linear-gradient(90deg, #9F6140 0%, #DB926B 100%);
+    color: #FFFFFF;
+    font-size: 12px;
+    border-radius: 2px;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.title-image-cont{
+    width: 172px;
+    height: 172px;
+    background-color: #2B3140;
+    border-radius: 6px;
+    padding: 9px;
+    margin-bottom: 32px;
+}
+
+.title-image-cont img{
+    width: 154px;
+    border-radius: 4px;
+}
+
+.ing-cont{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0px;
+    margin: 0px 0px 12px 0px;
+}
+
+.ing-cont li{
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.ing-image-cont{
+    width: 120px;
+    height: 120px;
+    background-color: #2B3140;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.ing-image-cont img{
+    widows: 100px;
+    height: 100px;
+}
+
+.ing-name{
+    width: 120px;
+    text-align: center;
+    color: #929292;
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 10px;
+}
+
+.dir-cont{
+    margin: 0px 0px 32px 0px;
+    padding-left: 20px;
+    list-style-image: url('images/bullet.svg');
+    color: #929292;
+    font-size: 16px;
+    letter-spacing: .2px;
+}
+
+.dir-cont li{
+    margin-bottom: 20px;
+}
+
+footer{
+    height: 160px;
+    padding-top: 40px;
+    color: #929292;
+}
+
+footer a{
+    color: #FFFFFF;
+}
+
+
+@media only screen and (max-width: 767px){
+    .search{
+        height: 60px;
+    }
+    #user-input{
+        width: 100%;
+        height: 60px;
+        margin-top: 0px;
+        font-size: 26px;
+        font-weight: 600;
+        padding-top: 3px;
+    }
+    .glass{
+        font-size: 26px;
+    }
+    .awesomplete {
+        width: calc(100% - 40px);
+    }
+}
